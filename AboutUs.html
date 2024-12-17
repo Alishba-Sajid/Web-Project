@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f7f8f5;
+      line-height: 1.6;
+      
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #322743;
+      padding: 10px 50px;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #9B90A1;
+    }
+
+    /* About Section */
+    .about-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 10%; /* Center the section vertically */
+      background-color:#E2DDEA ;
+      margin-top: 60px;
+      margin-bottom: 0;
+      
+    
+    }
+
+    .about-image {
+      flex: 1;
+      background: url('./Images/Aboutus.jpg') no-repeat center center / cover;
+      margin-right: 50px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      height: 225px;
+    }
+
+    .text-content {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .text-content h1 {
+      color:  black;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .text-content p {
+      margin-bottom: 15px;
+      font-size: 14px;
+      color:  black;
+    }
+
+    Footer {
+      background-color: #322743;
+      padding: 10px 10%; 
+
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    .item {
+      flex: 1;
+    }
+
+    .icon {
+      font-size: 30px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .item p strong {
+      font-size: 20px;
+    
+    }
+
+    .item p {
+      color: #e3dcc8;
+    }
+
+   
+      .stats {
+        flex-direction: row;
+      }
+    
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">FYP System</div>
+      <ul>
+        <li><a href="./AboutUs.html">About</a></li>
+        <li><a href="./Login.html">Login</a></li>
+        <li><a href="./Signup.html">Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-image"></div> <!-- Image on the left -->
+    <div class="text-content">
+      <h1>About Us</h1>
+      <p>
+        The FYP System is a comprehensive platform designed to streamline the final year project (FYP) experience for students. It connects students with experienced supervisors who provide guidance and support throughout the project lifecycle. 
+      </p>
+      <p>
+        By leveraging the FYP System, students can enhance their project management skills, improve their research capabilities, and ultimately deliver high-quality final year projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="Footer">
+    <div class="stats">
+      <div class="item">
+        <div class="icon">&#8986;</div>
+        <p><strong>10+</strong> <br>Years</p>
+      </div>
+      <div class="item">
+        <div class="icon">&#128101;</div>
+        <p><strong>300+</strong> <br>Users</p>
+      </div>
+      <div class="item">
+        <div class="icon">&#127942;</div>
+        <p><strong>15+</strong> <br>Awards</p>
+      </div>
+      <div class="item">
+        <div class="icon">&#128736;</div>
+        <p><strong>1500</strong> <br>Projects</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

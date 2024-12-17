@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+   <style>
+    body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E2DDEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login_box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+}
+
+.logo_container {
+    height: 100px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:#322743;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f281d;
+}
+
+.forgot_password {
+    display: block;
+    text-align: right;
+    margin-bottom: 15px;
+    color:rgb(224, 37, 37);
+    text-decoration: none;
+}
+
+.forgot_password:hover {
+    text-decoration: underline;
+}
+
+.signup_link a {
+    text-decoration: none;
+    color:rgb(38, 0, 255);
+    font-weight: bold;
+}
+
+.signup_link a:hover {
+    text-decoration: underline;
+}
+   </style>
+</head>
+<body>
+    <div class="login_container">
+        <div class="login_box">
+            <div class="logo_container">
+            </div>
+            <h1>Login</h1>
+            <form action="studentdashboard.html" method="GET">
+                <label for="userID">User ID:</label>
+                <input type="text" id="userID" name="userID" placeholder="Enter your User ID" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+
+                <a href="#" class="forgot_password">Forgot Password?</a>
+                <button type="submit" class="login_button">Login</button>
+            </form>
+            <br>
+            <hr>
+            <div class="signup_link">
+                Not registered yet? <a href="./Signup.html">Sign Up</a> Here
+            </div>
+        </div>
+    </div>
+</body>
+</html>
